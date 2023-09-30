@@ -1,11 +1,16 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { UserProvider } from './UserContext';
+import UserProfile from './UserProfile';
 
 function App() {
   return (
-    <div className="App">
-     <p>Hola Maane</p>
-    </div>
+    <UserProvider>
+      <div className="App">
+        <h1>Context API </h1>
+        <UserProfile />
+      </div>
+    </UserProvider>
   );
 }
 
