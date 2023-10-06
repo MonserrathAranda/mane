@@ -1,16 +1,19 @@
+// App.js
 import React from 'react';
 import './App.css';
-import { UserProvider } from './UserContext';
-import UserProfile from './UserProfile';
+import { AuthProvider } from './AuthContext';
+import LoginForm from './LoginForm';
+import HomePage from './HomePage';
 
 function App() {
   return (
-    <UserProvider>
+    <AuthProvider>
       <div className="App">
-        <h1>Context API </h1>
-        <UserProfile />
+        <h1>App de Inicio de Sesión</h1>
+        <LoginForm />
+        <HomePage />
       </div>
-    </UserProvider>
+    </AuthProvider>
   );
 }
 
