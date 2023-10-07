@@ -8,7 +8,7 @@ function HomePage() {
     <div>
       {user ? (
         <>
-          <h2>Bienvenido, {user.username}</h2>
+          <h2>Bienvenido Usuario!!, {user.username}</h2>
           <button onClick={logout}>Cerrar Sesión</button>
         </>
       ) : (
