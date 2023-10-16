@@ -1,0 +1,32 @@
+/* Fondo rosa pastel */
+body {
+    background-color: #ffccff;
+  }
+  
+  /* Estilo del título */
+  h1 {
+    color: #ff69b4; /* Rosa fuerte */
+    font-family: 'Comic Sans MS', cursive; /* Fuente kawaii */
+    text-align: center;
+  }
+  
+  /* Estilo del botón */
+  button {
+    background-color: #9370db; /* Morado */
+    color: #ffffff; /* Texto blanco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+ 
+  }
+
+  .contenedor {
+    display: flex; /* Utilizamos display:flex para alinear vertical y horizontalmente */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+    height: 100vh; /* Esto es opcional y establece la altura del contenedor al 100% de la altura de la ventana. Puedes ajustarlo según tus necesidades. */
+  }
+  
+  

@@ -1,19 +1,26 @@
-// App.js
-import React from 'react';
-import './App.css';
-import { AuthProvider } from './AuthContext';
-import LoginForm from './LoginForm';
-import HomePage from './HomePage';
+import React, { useState } from 'react';
+import Login from './Login';
+import MainPage from './MainPage';
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleLogin = (isAuthenticated) => {
+    setIsLoggedIn(isAuthenticated);
+  };
+
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+  };
+
   return (
-    <AuthProvider>
-      <div className="App">
-        <h1>App de Inicio de Sesión</h1>
-        <LoginForm />
-        <HomePage />
-      </div>
-    </AuthProvider>
+    <div>
+      {isLoggedIn ? (
+        <MainPage onLogout={handleLogout} />
+      ) : (
+        <Login onLogin={handleLogin} />
+      )}
+    </div>
   );
 }
 
