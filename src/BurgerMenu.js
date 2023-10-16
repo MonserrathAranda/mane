@@ -27,7 +27,7 @@ export default MenuHamburguesa;
 
 const kawaiiButtonStyle = {
     fontSize: '24px',
-    backgroundColor: '#ffcccb',
+    backgroundColor: '#5db7f3',
     borderRadius: '50%',
     padding: '5px',
     boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)',
