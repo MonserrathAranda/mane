@@ -5,28 +5,54 @@ body {
   
   /* Estilo del título */
   h1 {
-    color: #ff69b4; /* Rosa fuerte */
+    color: #ffffff; /* Rosa fuerte */
     font-family: 'Comic Sans MS', cursive; /* Fuente kawaii */
     text-align: center;
   }
   
-  /* Estilo del botón */
+   /* Estilo del botón */
   button {
-    background-color: #9370db; /* Morado */
+    background-color: #5db7f3; /* Morado */
     color: #ffffff; /* Texto blanco */
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+ 
+ 
     
  
   }
 
+
+  .input-field {
+    margin-bottom: 40px; /* Aumenta el espacio entre los campos */
+    width: 50%; /* Ajusta el ancho de los campos al 100% del contenedor */
+    padding: 10px; /* Agrega relleno para mejorar el aspecto visual */
+    /* Puedes agregar más estilos según tus necesidades */
+  }
+
+
   .contenedor {
     display: flex; /* Utilizamos display:flex para alinear vertical y horizontalmente */
-    justify-content: center; /* Centramos horizontalmente */
+    justify-content: right; /* Centramos horizontalmente */
     align-items: center; /* Centramos verticalmente */
     height: 100vh; /* Esto es opcional y establece la altura del contenedor al 100% de la altura de la ventana. Puedes ajustarlo según tus necesidades. */
   }
   
+  .contenedor2 {
+    border: 2px solid #5bc0de; 
+   width: 100%;
+    background-color: #5bc0de; /* Fondo azul celeste */
+    padding: 10px; /* Espacio interno alrededor del contenido */
+    text-align: center; /* Alineación del texto al centro */
+  }
   
+
+  .content {
+    border: 2px solid #5bc0de; 
+   width: 100%;
+    background-color: #5bc0de; /* Fondo azul celeste */
+    padding: 10px; /* Espacio interno alrededor del contenido */
+    text-align: center; /* Alineación del texto al centro */
+  }

@@ -6,9 +6,10 @@ const MainPage = ({ onLogout }) => {
   return (
     <div>
         <MenuHamburguesa />
-      <h1>Página Principal</h1>
+        <br/>
+      <div className='contenedor2'><h1 >Bienvenido a mi Pagina Principal</h1></div>
       <div className='contenedor'><button  onClick={onLogout}>Cerrar sesión</button></div>
-      {/* Aquí puedes agregar tu menú hamburguesa */}
+
     </div>
   );
 };

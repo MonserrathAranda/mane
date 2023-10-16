@@ -15,23 +15,29 @@ const Login = ({ onLogin }) => {
 
   return (
     <div style={{ textAlign: 'center' }}>
-      <h1>Login</h1>
+      <div className='content'><h1>Login</h1></div>
+      <br/>
       <input
         type="email"
         placeholder="Correo electrónico"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        style={{ marginBottom: '10px' }} // Agrega un espacio entre los campos
+        className="input-field"
+         // Agrega un espacio entre los campos
       />
       <input
         type="password"
         placeholder="Contraseña"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
-        style={{ marginBottom: '10px' }} // Agrega un espacio entre los campos
+        className="input-field"
+     // Agrega un espacio entre los campos
       />
+      <br/>
       <button onClick={handleLogin}>Iniciar sesión</button>
     </div>
+    
+
   );
 };
 
